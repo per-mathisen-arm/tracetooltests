@@ -107,9 +107,9 @@ int main(int argc, char** argv)
 	{
 		VkDeviceSize offset = 0;
 		VkMarkedOffsetsARM ar = { VK_STRUCTURE_TYPE_MARKED_OFFSETS_ARM, nullptr };
-		VkMarkingTypeARM markingType = VK_MARKING_TYPE_DEVICE_ADDRESS_BIT_ARM;
+		VkMarkingTypeARM markingType = VK_MARKING_TYPE_DEVICE_ADDRESS_ARM;
 		VkMarkingSubTypeARM subType;
-		subType.deviceAddressType = VK_DEVICE_ADDRESS_TYPE_ACCELERATION_STRUCTURE_BIT_ARM;
+		subType.deviceAddressType = VK_DEVICE_ADDRESS_TYPE_BUFFER_ARM;
 		ar.count = 1;
 		ar.pOffsets = &offset;
 		ar.pMarkingTypes = &markingType;
